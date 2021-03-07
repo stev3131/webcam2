@@ -13,8 +13,6 @@ const webcam = document.getElementById('div-webcam');
 const socket = io();
 const peers = {}
 const myPeer = new Peer(undefined, {
-  host: '/',
-  port: '3001'
 })
 //connesione al peer che è stata effetuata
 myPeer.on('open', Id => {
